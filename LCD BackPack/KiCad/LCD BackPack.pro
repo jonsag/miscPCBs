@@ -1,4 +1,4 @@
-update=Fri 07 Feb 2020 05:16:35 PM CET
+update=Mon 02 Mar 2020 07:31:26 PM CET
 version=1
 last_client=kicad
 [general]
@@ -248,11 +248,11 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=39 mil track
-Clearance=0.2
-TrackWidth=0.9906
-ViaDiameter=0.8
-ViaDrill=0.4
+Name=30 mil track
+Clearance=0.381
+TrackWidth=0.762
+ViaDiameter=3.048
+ViaDrill=0.762
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
