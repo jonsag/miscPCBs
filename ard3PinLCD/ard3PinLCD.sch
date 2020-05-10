@@ -36,7 +36,7 @@ F 3 "~" H 8550 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L My_Headers:2-pin_power_input_header J1
+L ard3PinLCD-rescue:2-pin_power_input_header-My_Headers J1
 U 1 1 5E4367E5
 P 3450 2650
 F 0 "J1" H 3429 2757 50  0000 C CNN
