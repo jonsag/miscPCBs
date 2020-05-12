@@ -63,7 +63,7 @@ U 1 1 5ED6AC32
 P 6050 3300
 F 0 "R2" H 6120 3346 50  0000 L CNN
 F 1 "1.2k" H 6120 3255 50  0000 L CNN
-F 2 "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" V 5980 3300 50  0001 C CNN
+F 2 "My_Misc:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal_larger" V 5980 3300 50  0001 C CNN
 F 3 "~" H 6050 3300 50  0001 C CNN
 	1    6050 3300
 	1    0    0    -1  
@@ -74,7 +74,7 @@ U 1 1 5ED6B4C6
 P 6050 3800
 F 0 "R3" H 6120 3846 50  0000 L CNN
 F 1 "33R" H 6120 3755 50  0000 L CNN
-F 2 "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" V 5980 3800 50  0001 C CNN
+F 2 "My_Misc:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal_larger" V 5980 3800 50  0001 C CNN
 F 3 "~" H 6050 3800 50  0001 C CNN
 	1    6050 3800
 	1    0    0    -1  
@@ -139,7 +139,7 @@ U 1 1 5ED6DD3D
 P 6500 3800
 F 0 "R6" H 6570 3846 50  0000 L CNN
 F 1 "1R" H 6570 3755 50  0000 L CNN
-F 2 "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" V 6430 3800 50  0001 C CNN
+F 2 "My_Misc:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal_larger" V 6430 3800 50  0001 C CNN
 F 3 "~" H 6500 3800 50  0001 C CNN
 	1    6500 3800
 	1    0    0    -1  
@@ -233,7 +233,7 @@ U 1 1 5ED755AB
 P 5450 2000
 F 0 "R1" H 5520 2046 50  0000 L CNN
 F 1 "120k" H 5520 1955 50  0000 L CNN
-F 2 "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" V 5380 2000 50  0001 C CNN
+F 2 "My_Misc:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal_larger" V 5380 2000 50  0001 C CNN
 F 3 "~" H 5450 2000 50  0001 C CNN
 	1    5450 2000
 	1    0    0    -1  
@@ -313,7 +313,7 @@ U 1 1 5ED90E56
 P 6050 5450
 F 0 "R4" H 6120 5496 50  0000 L CNN
 F 1 "1.2k" H 6120 5405 50  0000 L CNN
-F 2 "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" V 5980 5450 50  0001 C CNN
+F 2 "My_Misc:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal_larger" V 5980 5450 50  0001 C CNN
 F 3 "~" H 6050 5450 50  0001 C CNN
 	1    6050 5450
 	1    0    0    -1  
@@ -324,7 +324,7 @@ U 1 1 5ED90E5C
 P 6050 5950
 F 0 "R5" H 6120 5996 50  0000 L CNN
 F 1 "33R" H 6120 5905 50  0000 L CNN
-F 2 "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" V 5980 5950 50  0001 C CNN
+F 2 "My_Misc:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal_larger" V 5980 5950 50  0001 C CNN
 F 3 "~" H 6050 5950 50  0001 C CNN
 	1    6050 5950
 	1    0    0    -1  
@@ -381,7 +381,7 @@ U 1 1 5ED90E7B
 P 6500 5950
 F 0 "R7" H 6570 5996 50  0000 L CNN
 F 1 "1R" H 6570 5905 50  0000 L CNN
-F 2 "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" V 6430 5950 50  0001 C CNN
+F 2 "My_Misc:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal_larger" V 6430 5950 50  0001 C CNN
 F 3 "~" H 6500 5950 50  0001 C CNN
 	1    6500 5950
 	1    0    0    -1  
