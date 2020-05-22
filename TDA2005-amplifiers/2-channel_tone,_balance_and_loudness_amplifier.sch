@@ -461,9 +461,9 @@ Rout+
 Text GLabel 9750 4200 2    50   Input ~ 0
 Lout+
 Wire Wire Line
-	9750 2250 8850 2250
+	9750 2250 9250 2250
 Wire Wire Line
-	8850 4200 9750 4200
+	8850 4200 9250 4200
 $Comp
 L Device:R_POT RV1
 U 1 1 5EC2FF7E
@@ -716,7 +716,7 @@ Wire Wire Line
 	2000 1050 1900 1050
 Connection ~ 2000 1050
 Wire Wire Line
-	1600 1050 1100 1050
+	1600 1050 1550 1050
 Text GLabel 1100 1050 0    50   Input ~ 0
 Rin+
 $Comp
@@ -807,7 +807,7 @@ F 3 "~" H 1750 4550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1600 4550 1100 4550
+	1600 4550 1550 4550
 Text GLabel 1100 4550 0    50   Input ~ 0
 Lin+
 Wire Wire Line
@@ -929,4 +929,135 @@ F 3 "" H 6800 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 3350 6800 3450
+$Comp
+L My_Parts:4-pole_RL-input_screw_terminal U2
+U 1 1 5EC1C0EF
+P 1450 2250
+F 0 "U2" H 1642 2475 50  0000 C CNN
+F 1 "4-pole_RL-input_screw_terminal" H 1642 2384 50  0000 C CNN
+F 2 "My_Parts:4-pole_screw_terminal_RL_input" H 1625 2375 50  0001 C CNN
+F 3 "" H 1625 2375 50  0001 C CNN
+	1    1450 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L My_Parts:4-pole_RL-output_screw_terminal U4
+U 1 1 5EC1D23A
+P 9350 3050
+F 0 "U4" H 9828 2951 50  0000 L CNN
+F 1 "4-pole_RL-output_screw_terminal" H 9828 2860 50  0000 L CNN
+F 2 "My_Parts:4-pole_screw_terminal_RL_output" H 9525 3175 50  0001 C CNN
+F 3 "" H 9525 3175 50  0001 C CNN
+	1    9350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L My_Parts:2-pole_power_in_screw_terminal U3
+U 1 1 5EC1E023
+P 6800 5900
+F 0 "U3" H 7202 5901 50  0000 L CNN
+F 1 "2-pole_power_in_screw_terminal" H 7202 5810 50  0000 L CNN
+F 2 "My_Parts:2-pole_power_in_screw_terminal" H 6975 6025 50  0001 C CNN
+F 3 "" H 6975 6025 50  0001 C CNN
+	1    6800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+15V #PWR019
+U 1 1 5EC21036
+P 6700 5800
+F 0 "#PWR019" H 6700 5650 50  0001 C CNN
+F 1 "+15V" H 6715 5973 50  0000 C CNN
+F 2 "" H 6700 5800 50  0001 C CNN
+F 3 "" H 6700 5800 50  0001 C CNN
+	1    6700 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5EC212C8
+P 6700 6100
+F 0 "#PWR020" H 6700 5850 50  0001 C CNN
+F 1 "GND" H 6705 5927 50  0000 C CNN
+F 2 "" H 6700 6100 50  0001 C CNN
+F 3 "" H 6700 6100 50  0001 C CNN
+	1    6700 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 5900 6700 5900
+Wire Wire Line
+	6700 5900 6700 5800
+Wire Wire Line
+	6800 6000 6700 6000
+Wire Wire Line
+	6700 6000 6700 6100
+Wire Wire Line
+	1450 2250 1550 2250
+Wire Wire Line
+	1550 2250 1550 1050
+Connection ~ 1550 1050
+Wire Wire Line
+	1550 1050 1100 1050
+Wire Wire Line
+	1450 2450 1550 2450
+Wire Wire Line
+	1550 2450 1550 4550
+Connection ~ 1550 4550
+Wire Wire Line
+	1550 4550 1100 4550
+Wire Wire Line
+	1450 2550 1750 2550
+Wire Wire Line
+	1750 2550 1750 2350
+Wire Wire Line
+	1750 2350 1450 2350
+$Comp
+L power:GND #PWR018
+U 1 1 5EC55FA1
+P 1750 2650
+F 0 "#PWR018" H 1750 2400 50  0001 C CNN
+F 1 "GND" H 1755 2477 50  0000 C CNN
+F 2 "" H 1750 2650 50  0001 C CNN
+F 3 "" H 1750 2650 50  0001 C CNN
+	1    1750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2650 1750 2550
+Connection ~ 1750 2550
+Wire Wire Line
+	9350 3050 9250 3050
+Wire Wire Line
+	9250 3050 9250 2250
+Connection ~ 9250 2250
+Wire Wire Line
+	9250 2250 8850 2250
+Wire Wire Line
+	9350 3250 9250 3250
+Wire Wire Line
+	9250 3250 9250 4200
+Connection ~ 9250 4200
+Wire Wire Line
+	9250 4200 9750 4200
+Wire Wire Line
+	9350 3350 9050 3350
+Wire Wire Line
+	9050 3350 9050 3150
+Wire Wire Line
+	9050 3150 9350 3150
+$Comp
+L power:GND #PWR021
+U 1 1 5EC77E69
+P 9050 3450
+F 0 "#PWR021" H 9050 3200 50  0001 C CNN
+F 1 "GND" H 9055 3277 50  0000 C CNN
+F 2 "" H 9050 3450 50  0001 C CNN
+F 3 "" H 9050 3450 50  0001 C CNN
+	1    9050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3450 9050 3350
+Connection ~ 9050 3350
 $EndSCHEMATC

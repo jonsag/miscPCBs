@@ -1,4 +1,4 @@
-update=Sat 16 May 2020 02:39:18 PM CEST
+update=Fri 22 May 2020 11:20:23 AM CEST
 version=1
 last_client=kicad
 [general]
@@ -51,9 +51,9 @@ SilkTextSizeThickness=0.15
 SilkTextItalic=0
 SilkTextUpright=1
 CopperLineWidth=0.2
-CopperTextSizeV=1.524
-CopperTextSizeH=1.524
-CopperTextThickness=0.381
+CopperTextSizeV=2
+CopperTextSizeH=2
+CopperTextThickness=0.5
 CopperTextItalic=0
 CopperTextUpright=1
 EdgeCutLineWidth=0.05
