@@ -1,0 +1,162 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L My_Arduino:ESP-01 U1
+U 1 1 615390D6
+P 5000 2600
+F 0 "U1" V 5429 2222 50  0000 R CNN
+F 1 "ESP-01" V 5520 2222 50  0000 R CNN
+F 2 "My_Arduino:ESP-01_large" H 5700 2450 50  0001 C CNN
+F 3 "http://l0l.org.uk/2014/12/esp8266-modules-hardware-guide-gotta-catch-em-all/" H 5700 2450 50  0001 C CNN
+	1    5000 2600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61539A26
+P 4650 4300
+F 0 "R1" V 4857 4300 50  0000 C CNN
+F 1 "10k" V 4766 4300 50  0000 C CNN
+F 2 "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" V 4580 4300 50  0001 C CNN
+F 3 "~" H 4650 4300 50  0001 C CNN
+	1    4650 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61539CA1
+P 4650 4650
+F 0 "R2" H 4720 4696 50  0000 L CNN
+F 1 "10k" H 4720 4605 50  0000 L CNN
+F 2 "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_larger_pads" V 4580 4650 50  0001 C CNN
+F 3 "~" H 4650 4650 50  0001 C CNN
+	1    4650 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61539F31
+P 4700 2600
+F 0 "#PWR0101" H 4700 2350 50  0001 C CNN
+F 1 "GND" H 4705 2427 50  0000 C CNN
+F 2 "" H 4700 2600 50  0001 C CNN
+F 3 "" H 4700 2600 50  0001 C CNN
+	1    4700 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2600 5000 2500
+Wire Wire Line
+	5000 2500 4700 2500
+Wire Wire Line
+	4700 2500 4700 2600
+$Comp
+L Switch:SW_Push SW1
+U 1 1 6154068B
+P 6100 2500
+F 0 "SW1" H 6100 2785 50  0000 C CNN
+F 1 "Flash" H 6100 2694 50  0000 C CNN
+F 2 "My_Misc:SW_PUSH-12mm_large" H 6100 2700 50  0001 C CNN
+F 3 "~" H 6100 2700 50  0001 C CNN
+	1    6100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 61540939
+P 6100 4400
+F 0 "SW2" H 6100 4685 50  0000 C CNN
+F 1 "Reset" H 6100 4594 50  0000 C CNN
+F 2 "My_Misc:SW_PUSH-12mm_large" H 6100 4600 50  0001 C CNN
+F 3 "~" H 6100 4600 50  0001 C CNN
+	1    6100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61540BB0
+P 6400 4600
+F 0 "#PWR0102" H 6400 4350 50  0001 C CNN
+F 1 "GND" H 6405 4427 50  0000 C CNN
+F 2 "" H 6400 4600 50  0001 C CNN
+F 3 "" H 6400 4600 50  0001 C CNN
+	1    6400 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4600 6400 4400
+Wire Wire Line
+	6400 4400 6300 4400
+Wire Wire Line
+	6400 4400 6400 2500
+Wire Wire Line
+	6400 2500 6300 2500
+Connection ~ 6400 4400
+Wire Wire Line
+	5900 4400 5200 4400
+Wire Wire Line
+	5200 4400 5200 4150
+Wire Wire Line
+	5200 2600 5200 2500
+$Comp
+L power:VCC #PWR0103
+U 1 1 6154BB5E
+P 4400 4000
+F 0 "#PWR0103" H 4400 3850 50  0001 C CNN
+F 1 "VCC" H 4415 4173 50  0000 C CNN
+F 2 "" H 4400 4000 50  0001 C CNN
+F 3 "" H 4400 4000 50  0001 C CNN
+	1    4400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4150 5100 4300
+Wire Wire Line
+	5100 4300 4800 4300
+Wire Wire Line
+	4500 4300 4400 4300
+Wire Wire Line
+	4400 4300 4400 4000
+$Comp
+L power:VCC #PWR0104
+U 1 1 61550D4F
+P 5600 4000
+F 0 "#PWR0104" H 5600 3850 50  0001 C CNN
+F 1 "VCC" H 5615 4173 50  0000 C CNN
+F 2 "" H 5600 4000 50  0001 C CNN
+F 3 "" H 5600 4000 50  0001 C CNN
+	1    5600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4300 5600 4300
+Wire Wire Line
+	5600 4300 5600 4000
+Wire Wire Line
+	5300 4150 5300 4300
+Wire Wire Line
+	4400 4300 4400 4650
+Wire Wire Line
+	4400 4650 4500 4650
+Connection ~ 4400 4300
+Wire Wire Line
+	4800 4650 5200 4650
+Wire Wire Line
+	5200 4650 5200 4400
+Connection ~ 5200 4400
+Wire Wire Line
+	5200 2500 5900 2500
+$EndSCHEMATC
