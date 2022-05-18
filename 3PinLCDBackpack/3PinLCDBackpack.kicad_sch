@@ -907,7 +907,7 @@
     (property "Value" "LCD_HD44780" (id 1) (at 189.9412 98.806 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "My_Parts:LCD_HD44780_16x2_w_headers_large" (id 2) (at 203.2 121.92 0)
+    (property "Footprint" "My_Parts:LCD_HD44780_16x2_w_headers_no outlinelarge" (id 2) (at 203.2 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 182.88 76.2 0)
@@ -1075,7 +1075,7 @@
       (reference "U1") (unit 1) (value "74HC595") (footprint "My_Misc:DIP-16_W7.62mm_LongPads w socket")
     )
     (path "/00000000-0000-0000-0000-000061513e75"
-      (reference "U2") (unit 1) (value "LCD_HD44780") (footprint "My_Parts:LCD_HD44780_16x2_w_headers_large")
+      (reference "U2") (unit 1) (value "LCD_HD44780") (footprint "My_Parts:LCD_HD44780_16x2_w_headers_no outlinelarge")
     )
     (path "/aabd25b2-274f-420f-b1ab-3c5ed40de82c"
       (reference "U3") (unit 1) (value "5-pin_LiquidCrystal595_connector") (footprint "My_Headers:5-pin JST LiquidCrystal595")
