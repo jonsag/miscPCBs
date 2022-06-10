@@ -3,12 +3,12 @@
  * $Date: 2012-04-08 22:54:07 +0000 (Sun, 08 Apr 2012) $
  * $Revision: 4 $
  * ----------------------------------
- * 
- * Full Information:  
+ *
+ * Full Information:
  *    Code and Breadboarding: http://rowansimms.com/article.php/lcd-hookup-in-seconds
  *    Make your own Shield:   http://rowansimms.com/article.php/lcd-hookup-in-seconds-shield
  *
- * Adaption of the LiquidCrystal library shipped with Arduino 22, 
+ * Adaption of the LiquidCrystal library shipped with Arduino 22,
  * now updated for Arduino 1.0.
  * Code originally developed by Steve Hobley - February 2011
  *      updates and maintenance by Rowan Simms   code@rowansimms.com
@@ -82,12 +82,13 @@
 #define LCD_5x10DOTS 0x04
 #define LCD_5x8DOTS 0x00
 
-class LiquidCrystal595 : public Print {
+class LiquidCrystal595 : public Print
+{
 public:
   LiquidCrystal595(uint8_t datapin, uint8_t latchpin, uint8_t clockpin);
 
   void init(uint8_t datapin, uint8_t latchpin, uint8_t clockpin);
-    
+
   void begin(uint8_t cols, uint8_t rows, uint8_t charsize = LCD_5x8DOTS);
 
   void clear();
@@ -107,11 +108,11 @@ public:
   void noAutoscroll();
 
   void createChar(uint8_t, uint8_t[]);
-  void setCursor(uint8_t, uint8_t); 
+  void setCursor(uint8_t, uint8_t);
   virtual size_t write(uint8_t);
   void command(uint8_t);
-  
-    // Moved to public - to aid with debugging, and other uses for the library etc...
+
+  // Moved to public - to aid with debugging, and other uses for the library etc...
   void setRSPin(uint8_t pinValue);
   void setEPin(uint8_t pinValue);
   void setD4Pin(uint8_t pinValue);
@@ -121,7 +122,7 @@ public:
   void setLED1Pin(uint8_t pinValue);
   void setLED2Pin(uint8_t pinValue);
   void shift595();
-  
+
 private:
   void send(uint8_t, uint8_t);
   void write4bits(uint8_t);
@@ -131,15 +132,15 @@ private:
   uint8_t _datapin;
   uint8_t _latchpin;
   uint8_t _clockpin;
-  char _register; //Stores the current state of the data
- 
+  char _register; // Stores the current state of the data
+
   uint8_t _displayfunction;
   uint8_t _displaycontrol;
   uint8_t _displaymode;
 
   uint8_t _initialized;
 
-  uint8_t _numlines,_currline;
+  uint8_t _numlines, _currline;
 };
 
 #endif
