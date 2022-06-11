@@ -17,9 +17,9 @@
  -----Shift Reg to LCD--------
  * SR Pin 15  - ENABLE        10000000
  * SR Pin 1   - D4            00000010
- * SR Pin 2   - D5	          00000100
- * SR Pin 3   - D6	          00001000
- * SR Pin 4   - D7	          00010000
+ * SR Pin 2   - D5	      00000100
+ * SR Pin 3   - D6	      00001000
+ * SR Pin 4   - D7	      00010000
  * SR Pin 5   - MOSFET / LED1 00100000
  * SR Pin 6   - LED 2         01000000
  * SR Pin 7   - RS            00000001
@@ -35,10 +35,26 @@
 #define Clock 4
 LiquidCrystal595 lcd(Data, Latch, Clock);
 
+void backlight(boolean control)
+{
+  if (control)
+  {
+    lcd.setLED2Pin(HIGH);
+    lcd.display();
+  }
+  else
+  {
+    lcd.setLED2Pin(LOW);
+    lcd.noDisplay();
+  }
+}
+
 void setup()
 {
   lcd.begin(20, 4);
 
+  backlight(HIGH);
+  
   // Print a message to the LCD.
   lcd.setCursor(0, 0);
   lcd.print("This is line 1");
@@ -47,17 +63,25 @@ void setup()
   lcd.setCursor(0, 1);
   lcd.print("This is line 2");
   delay(1000);
-
-  lcd.setCursor(0, 2);
-  lcd.print(127, HEX);
-  delay(1000);
-
-  lcd.setCursor(0, 3);
-  lcd.print("This is line ");
-  lcd.print(4, BIN); // << Snagged from the Print class
-  delay(1000);
 }
 
 void loop()
 {
+  // lcd.display();
+
+  backlight(LOW);
+  lcd.setCursor(0, 0);
+  lcd.print("Backlight off   ");
+  delay(1000);
+  lcd.setCursor(0, 0);
+  lcd.print("                ");
+
+  // lcd.noDisplay();
+
+  backlight(HIGH);
+  lcd.setCursor(0, 1);
+  lcd.print("Backlight on    ");
+  delay(1000);
+  lcd.setCursor(0, 1);
+  lcd.print("                ");
 }
