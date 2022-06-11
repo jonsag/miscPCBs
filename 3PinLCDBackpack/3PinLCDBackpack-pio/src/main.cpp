@@ -35,9 +35,9 @@
 #define Clock 4
 LiquidCrystal595 lcd(Data, Latch, Clock);
 
-void backlight(boolean control)
+void backlightOn(boolean on)
 {
-  if (control)
+  if (on)
   {
     lcd.setLED2Pin(HIGH);
     lcd.display();
@@ -53,7 +53,7 @@ void setup()
 {
   lcd.begin(20, 4);
 
-  backlight(HIGH);
+  backlightOn(HIGH);
   
   // Print a message to the LCD.
   lcd.setCursor(0, 0);
@@ -69,7 +69,7 @@ void loop()
 {
   // lcd.display();
 
-  backlight(LOW);
+  backlightOn(false);
   lcd.setCursor(0, 0);
   lcd.print("Backlight off   ");
   delay(1000);
@@ -78,7 +78,7 @@ void loop()
 
   // lcd.noDisplay();
 
-  backlight(HIGH);
+  backlightOn(true);
   lcd.setCursor(0, 1);
   lcd.print("Backlight on    ");
   delay(1000);
