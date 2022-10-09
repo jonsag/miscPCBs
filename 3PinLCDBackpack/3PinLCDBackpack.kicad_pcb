@@ -5,6 +5,12 @@
   )
 
   (paper "A4")
+  (title_block
+    (title "3PinLCDBackPack")
+    (date "2022-09-09")
+    (rev "0.1")
+  )
+
   (layers
     (0 "F.Cu" signal)
     (31 "B.Cu" signal)
@@ -669,7 +675,7 @@
   (gr_text "JP1" (at 154.94 68.58) (layer "B.SilkS") (tstamp 8fdf293b-f5dc-48d6-8a78-156741834961)
     (effects (font (size 0.762 0.762) (thickness 0.127)) (justify mirror))
   )
-  (gr_text "3PinLCDBackpack\nDesign: Jon Sagebrand\ngithub.com/jonsag/miscPCBs" (at 174.625 66.04) (layer "B.SilkS") (tstamp b0f02e27-1bdc-416c-9a0c-7b46da1b6f9e)
+  (gr_text "${TITLE}-${REVISION}\nDesign: Jon Sagebrand\ngithub.com/jonsag/miscPCBs" (at 174.625 66.04) (layer "B.SilkS") (tstamp b0f02e27-1bdc-416c-9a0c-7b46da1b6f9e)
     (effects (font (size 0.762 0.762) (thickness 0.127)) (justify left mirror))
   )
   (gr_text "1" (at 152.4 69.85) (layer "B.SilkS") (tstamp c5d80fbc-0641-4c15-bbf1-c99c6e976904)

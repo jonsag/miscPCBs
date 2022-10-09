@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "3PinLCDBackPack")
+    (date "2022-09-09")
+    (rev "0.1")
+  )
+
   (lib_symbols
     (symbol "3PinLCDBackpack-rescue:R_POT-Device" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "RV" (id 0) (at -4.445 0 90)
