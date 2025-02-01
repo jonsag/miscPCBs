@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "3PinLCDBackpack-pio",
+			"path": "3PinLCDBackpack/3PinLCDBackpack-pio"
+		}
+	],
+	"settings": {}
+}
