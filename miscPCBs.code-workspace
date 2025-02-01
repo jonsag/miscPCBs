@@ -6,7 +6,19 @@
 		{
 			"name": "3PinLCDBackpack-pio",
 			"path": "3PinLCDBackpack/3PinLCDBackpack-pio"
+		},
+		{
+			"name": "4PinLCDBackPack-pio",
+			"path": "4PinLCDBackPack/4PinLCDBackPack-pio"
+		},
+		{
+			"name": "2PinLCDBackPack-pio",
+			"path": "2PinLCDBackPack/2PinLCDBackPack-pio"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"cSpell.words": [
+			"medzik"
+		]
+	}
 }

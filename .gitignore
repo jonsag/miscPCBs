@@ -4,3 +4,12 @@
 *fp-info-cache
 FM-Transmitter/KiCad/FM-Transmitter/FM-Transmitter-backups/
 LCD BackPack/KiCad/LCDBackPack/LCD BackPack-backups/
+2PinLCDBackPack/KiCad/2PinLCDBackPack/2PinLCDBackPack-backups/
+*.dsn
+*.rules
+*.ses
+medzik TDA2005 Amplifier/KiCad/medzik TDA2005 Amplifier/medzik TDA2005 Amplifier-backups/
+rotaryToolMotorControler/KiCad/rotaryToolMotorControler/rotaryToolMotorControler-backups/
+TDA2005-amplifiers/KiCad/1-channel_bridged_amplifier/1-channel_bridged_amplifier-backups/
+TDA2005-amplifiers/KiCad/2-channel_tone,_balance_and_loudness_amplifier/2-channel_tone,_balance_and_loudness_amplifier-backups/
+TDA2005-amplifiers/KiCad/2-channel_tone,_balance_and_loudness_amplifier/~2-channel_tone,_balance_and_loudness_amplifier.kicad_sch.lck
