@@ -34,3 +34,8 @@ Schematics of a Dremel 3000 motor control.
 
 1-channel bridged amplifier using TDA2005.  
 2-channel amplifier with tone, balance and loudness control. Also with TDA2005.  
+
+## TDA2005R
+
+An amplifier with PCB layout possible to etch at home.  
+Uses TDA2005.  
