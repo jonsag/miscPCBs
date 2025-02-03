@@ -14,6 +14,10 @@
 		{
 			"name": "2PinLCDBackPack-pio",
 			"path": "2PinLCDBackPack/2PinLCDBackPack-pio"
+		},
+		{
+			"name": "Uber I2C LCD Controller Module-pio",
+			"path": "Uber I2C LCD Controller Module/Uber I2C LCD Controller Module-pio"
 		}
 	],
 	"settings": {

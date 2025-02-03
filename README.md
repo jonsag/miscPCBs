@@ -39,3 +39,7 @@ Schematics of a Dremel 3000 motor control.
 
 An amplifier with PCB layout possible to etch at home.  
 Uses TDA2005.  
+
+## Uber I2C LCD Controller Module
+
+Even more control over the LCD.
