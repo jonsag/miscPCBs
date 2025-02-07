@@ -2062,6 +2062,26 @@
 		)
 		(uuid "e35ca5ef-94cd-4e0d-a012-5a22d2841f9c")
 	)
+	(label "GND"
+		(at 132.08 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "38e45619-016e-4fa6-abc7-dad0c2d08482")
+	)
+	(label "3V3"
+		(at 132.08 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "57e4174e-eab8-4f0c-8501-ece7c46de92d")
+	)
 	(symbol
 		(lib_id "LED:TSAL4400")
 		(at 88.9 113.03 90)
@@ -2158,7 +2178,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 110.49 135.128 90)
 			(effects
 				(font
@@ -2301,7 +2321,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "My_Misc:TO-92_Inline_Wide_large"
 			(at 86.36 135.255 0)
 			(effects
 				(font
@@ -2377,7 +2397,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_Misc:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal_large"
 			(at 87.122 96.52 90)
 			(effects
 				(font
@@ -2447,7 +2467,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "My_RaspberryPi:RaspberryPi_Hat_2x20_pin_GPIO_larger_pads"
 			(at 160.02 113.03 0)
 			(effects
 				(font
